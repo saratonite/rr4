@@ -1,17 +1,31 @@
-nav{
-  display: flex;
-  background-color: #f44336;
-}
-nav ul{
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  padding: 10px;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF3D00;
+    display: flex;
 }
 
-nav ul li a{
-  text-decoration: none;
+li {
+  flex-grow: 1;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #DD2C00;
+}
+
+.active {
+    background-color: #BF360C;
 }
