@@ -10,6 +10,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Navigation from './components/Navigation';
 import Page from './components/Page';
+import Topic from './components/Topic';
 import Notfound from './components/Notfound';
 import './App.css';
 
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path="/" component={Home}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/page/:pageId?" component={Page}></Route>
+              <Route path="/topic" component={Topic}></Route>
               <Route  component={Notfound}></Route>
             </Switch>
           </div>
